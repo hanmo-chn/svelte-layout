@@ -1,0 +1,19 @@
+.tsui-flex-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  &.horizontal {
+    flex-direction: row;
+  }
+
+  .flex-block {
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    &.fixed {
+      flex-grow: 0;
+      flex-shrink: 0;
+    }
+  }
+}
